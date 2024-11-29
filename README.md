@@ -1,16 +1,38 @@
-# zarity2
+# Zarity Blog App
 
-A new Flutter project.
+Zarity Blog App is a Flutter application that allows users to browse and read blog posts. The app supports deep linking, enabling users to navigate directly to specific blog posts via URLs.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Blog List**: Displays a list of blog posts fetched from a provider.
+- **Search**: Allows users to search for blog posts by title.
+- **Blog Details**: Displays detailed information about a selected blog post.
+- **Deep Linking**: Supports deep linking to navigate directly to specific blog posts.
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Blog List Screen](screenshots/blog_list.png)
+![Blog Detail Screen](screenshots/blog_detail.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Workflow
+
+1. **Main Screen**: The app starts with the `BlogListScreen`, which displays a list of blog posts.
+2. **Search**: Users can search for blog posts using the search icon in the app bar. The search functionality is handled by the `BlogSearchDelegate`.
+3. **Blog Details**: When a user selects a blog post, they are navigated to the `BlogDetailScreen`, which shows detailed information about the blog post.
+4. **Deep Linking**: The app listens for deep links using the `DeepLinkListener` widget. When a deep link is received, the app navigates to the corresponding `BlogDetailScreen`.
+
+## Installation
+
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/TejasDhole/zarity.git
+   cd zarity
+   
+
+Video Link:[Click here to visit Google](https://drive.google.com/file/d/1D8SseLJogmIwtWrF1E9hhVZl4jr6UdqK/view?usp=sharing)
+
+## Deep Linking Implementation
+
+In this project, Android App Links are used to navigate to the BlogDetailScreen. Firebase Dynamic Links are no longer operational, so Android App Links are employed for deep linking. The steps to implement deep linking are demonstrated in the video linked above.
+
+The app listens for incoming links and, depending on the link structure, navigates the user to the correct blog post.
