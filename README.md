@@ -11,10 +11,15 @@ Zarity Blog App is a Flutter application that allows users to browse and read bl
 
 ## Screenshots
 
-![Blog List Screen](screenshots/blog_list.png)
-![Blog Detail Screen](screenshots/blog_detail.png)
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/04b9ca72-d62c-46dc-8102-6c54b9b41ee9" width="300" />
+    <img src="https://github.com/user-attachments/assets/91b71d05-0920-46d9-8296-4e74fd3e1395" width="300" />
+   
+</p>
 
-## Workflow
+
+## Workflow!
+
 
 1. **Main Screen**: The app starts with the `BlogListScreen`, which displays a list of blog posts.
 2. **Search**: Users can search for blog posts using the search icon in the app bar. The search functionality is handled by the `BlogSearchDelegate`.
